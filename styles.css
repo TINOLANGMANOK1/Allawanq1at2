@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header, aside, article, .content, footer {
+    border: 1px solid #000;
+}
+
+header {
+    height: 10vh;
+}
+
+.main {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    height: 60vh;
+}
+
+aside, .middle {
+    display: table-cell;
+    vertical-align: top;
+}
+
+aside {
+    width: 10%;
+    min-width: 80px;
+}
+
+.middle {
+    width: auto;
+}
+
+article {
+    height: 40vh;
+}
+
+.content {
+    height: 20vh;
+}
+
+footer {
+    height: 10vh;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        display: block;
+        height: auto;
+    }
+    aside, .middle {
+        display: block;
+        width: 100%;
+    }
+    aside {
+        height: 10vh;
+    }
+}
